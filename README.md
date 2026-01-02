@@ -1,10 +1,18 @@
 Smart IoT Fogponics System using Arduino, ESP8266 & Blynk
+
+
 Project Overview
+
+
 This project is a Smart Fogponics System designed and implemented using Arduino with ESP8266 WiFi module, capable of real-time monitoring and automated control of critical plant growth parameters.
 The system continuously measures temperature, pH, and TDS (nutrient concentration) and automatically adjusts motors and foggers based on selected growth modes. All sensor data and controls are remotely accessible through the Blynk IoT mobile application.
 This project demonstrates strong skills in embedded systems, IoT integration, sensor calibration, and closed-loop control, making it suitable for smart agriculture, research, and freelancing IoT solutions.
 
+
+
 Key Features
+
+
 •	Real-time monitoring of:
 o	Temperature (DS18B20)
 o	pH level
@@ -16,8 +24,14 @@ o	Total Dissolved Solids (TDS)
 •	Modular and scalable embedded architecture
 •	Designed for low-cost smart agriculture solutions
 
+
+
 Technologies Used
+
+
 Hardware
+
+
 •	Arduino Uno / Mega
 •	ESP8266 WiFi Module
 •	DS18B20 Temperature Sensor
@@ -26,14 +40,21 @@ Hardware
 •	RTC DS1302
 •	Relay / Motor Driver
 •	Fogger (Ultrasonic Mist Maker)
+
+
 Software
+
+
 •	Arduino IDE
 •	Embedded C / Arduino Framework
 •	Blynk IoT Platform
 •	ESP8266 AT Commands
 •	RTC and Sensor Libraries
 
+
 System Architecture
+
+
 Sensors (Temp / pH / TDS)
           ↓
      Arduino MCU
@@ -48,7 +69,9 @@ Arduino → Motor Control → Nutrient Adjustment
 Arduino → Fogger Control → Root Zone Environment
 
 Blynk Dashboard Mapping
+
 Blynk Virtual Pin	Function
+
 V0	Temperature Display
 V1	TDS Value Display
 V2	pH Value Display
@@ -58,6 +81,7 @@ V5	Mode 3 Selection
 V6	Mode 4 Selection
 
 Sensor Details
+
 Temperature Sensor (DS18B20)
 •	OneWire protocol
 •	Accurate root-zone temperature monitoring
